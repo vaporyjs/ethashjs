@@ -1,2 +1,2 @@
 require('./block.js')
-require('./ethash.js')
+require('./vapash.js')

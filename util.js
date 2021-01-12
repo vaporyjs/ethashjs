@@ -1,6 +1,6 @@
-const ethUtil = require('ethereumjs-util')
+const vapUtil = require('vaporyjs-util')
 const MR = require('miller-rabin')
-const BN = ethUtil.BN
+const BN = vapUtil.BN
 
 exports.params = {
   DATASET_BYTES_INIT: 1073741824, // 2^30
@@ -51,7 +51,7 @@ exports.getEpoc = function (blockNumber) {
  */
 exports.getSeed = function (seed, begin, end) {
   for (var i = begin; i < end; i++) {
-    seed = ethUtil.sha3(seed)
+    seed = vapUtil.sha3(seed)
   }
   return seed
 }

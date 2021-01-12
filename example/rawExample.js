@@ -1,8 +1,8 @@
-const Ethash = require('..')
+const Vapash = require('..')
 const levelup = require('levelup')
 const memdown = require('memdown')
 
-Ethash.prototype.verifySubmit = function (number, headerHash, nonce, cb) {
+Vapash.prototype.verifySubmit = function (number, headerHash, nonce, cb) {
   var self = this
   console.log(number)
   this.loadEpoc(number, function () {
@@ -17,10 +17,10 @@ var cacheDB = levelup('', {
   db: memdown
 })
 
-var ethash = new Ethash(cacheDB)
+var vapash = new Vapash(cacheDB)
 
 var header = Buffer('0e2887aa1a0668bf8254d1a6ae518927de99e3e5d7f30fd1f16096e2608fe05e', 'hex')
 
-ethash.verifySubmit(35414, header, 'e360b6170c229d15', function (result) {
+vapash.verifySubmit(35414, header, 'e360b6170c229d15', function (result) {
   console.log(result.toString('hex'))
 })

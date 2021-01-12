@@ -1,7 +1,8 @@
 {
-  "name": "ethashjs",
+  "name": "vapashjs",
+  "namespace": "vaporyjs",
   "version": "0.0.7",
-  "description": "an ethash implementation in JS",
+  "description": "an vapash implementation in JS",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -14,29 +15,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethereumjs/ethashjs.git"
+    "url": "git+https://github.com/vaporyjs/vapashjs.git"
   },
   "keywords": [
-    "ethash",
-    "ethereum",
+    "vapash",
+    "vapory",
     "POW"
   ],
   "author": "mjbecze <mjbecze@gmail.com>",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/ethereumjs/ethashjs/issues"
+    "url": "https://github.com/vaporyjs/vapashjs/issues"
   },
-  "homepage": "https://github.com/ethereumjs/ethashjs#readme",
+  "homepage": "https://github.com/vaporyjs/vapashjs#readme",
   "dependencies": {
     "async": "^2.1.2",
     "buffer-xor": "^2.0.1",
-    "ethereumjs-util": "^5.0.1",
+    "vaporyjs-util": "^5.1.5",
     "miller-rabin": "^4.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.4",
-    "ethereumjs-block": "^1.2.2",
-    "ethereumjs-testing": "0.0.1",
+    "vaporyjs-block": "^1.7.1",
+    "vaporyjs-testing": "1.0.4",
     "istanbul": "^0.4.1",
     "levelup": "^1.3.0",
     "memdown": "^1.1.0",
